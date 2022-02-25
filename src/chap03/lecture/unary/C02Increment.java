@@ -54,22 +54,3 @@ public class C02Increment {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
