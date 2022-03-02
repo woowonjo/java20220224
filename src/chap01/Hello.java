@@ -1,4 +1,4 @@
-package chep01;
+package chap01;
 
 /*
  * 작성자 : 신용권
