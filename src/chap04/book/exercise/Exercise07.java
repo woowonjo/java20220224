@@ -13,31 +13,31 @@ public class Exercise07 {
 		Scanner scanner = new Scanner(System.in);
 
 		while (run) {
-			System.out.println("---------------------------------");
-			System.out.println("1.예금 | 2.출금 | 3.잔고 | 4.종료");
-			System.out.println("---------------------------------");
+			System.out.println("------------------------------------");
+			System.out.println("1.예금 | 2.출금 | 3.잔액확인 | 4.종료");
+			System.out.println("------------------------------------");
 			System.out.print("선택>");
 
-			int number = scanner.nextInt();
+			int menu = scanner.nextInt();
 			int money = 0;
 
-			switch (number) {
+			switch (menu) {
 			case 1:
-				System.out.println("예금액>");
+				System.out.print("예금액을 입력하세요 >");
 				money = scanner.nextInt();
 				balance += money;
 				System.out.println(balance);
 				break;
 			case 2:
-				System.out.println("출금액>");
+				System.out.print("출금액을 입력하세요 >");
 				money = scanner.nextInt();
 				balance -= money;
 				System.out.println(balance);
 				break;
 			case 3:
-				System.out.println("잔고>" + balance);
+				System.out.println("현재 잔액은 " + balance + "원 입니다.");
 				break;
-			default:
+			case 4:
 				run = false;
 				break;
 
