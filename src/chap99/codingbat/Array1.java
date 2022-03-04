@@ -1,6 +1,50 @@
 package chap99.codingbat;
 
 public class Array1 {
+	public int[] rotateLeft3(int[] nums) {
+		/*
+		int[] result = new int[3];
+		result[0] = nums[1];
+		result[1] = nums[2];
+		result[2] = nums[0];
+		
+		return result;
+		*/
+		/*
+		int[] result = new int[] {nums[1], nums[2], nums[0]};
+		return result;
+		*/
+
+		int tmp = nums[0];
+		nums[0] = nums[1];
+		nums[1] = nums[2];
+		nums[2] = tmp;
+
+		return nums;
+	}
+
+	public int[] makePi() {
+		// int[] arr1 = {3, 1, 4};
+		// return arr1;
+
+		// int[] arr1 = new int[] {3, 1, 4};
+		// return arr1;
+
+		// int[] arr1;
+		// arr1 = new int[] {3, 1, 4};
+		// return arr1;
+
+		// return new int[] {3, 1, 4};
+
+		int[] arr1;
+		arr1 = new int[3];
+		arr1[0] = 3;
+		arr1[1] = 1;
+		arr1[2] = 4;
+
+		return arr1;
+	}
+
 	public int sum3(int[] nums) {
 		return nums[0] + nums[1] + nums[2];
 	}
