@@ -1,4 +1,4 @@
-package chap06.lecture.p04method;
+ package chap06.lecture.p04method;
 
 public class App06 {
 	public static void main(String[] args) {
