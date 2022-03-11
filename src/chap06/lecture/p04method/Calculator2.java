@@ -20,6 +20,13 @@ public class Calculator2 {
 	int varSum(String name, int... nums) {
 		return 0;
 	}
+
+	public void concat(String... strs) {
+		for (String str : strs) {
+			System.out.print(str);
+		}
+		System.out.println();
+	}
 }
 
 
