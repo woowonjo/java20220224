@@ -85,7 +85,7 @@ public class BankApplication {
 		int money = scanner.nextInt();
 		int balance = account.getBalance();
 		account.setBalance(balance + money); 
-		
+		 
 		System.out.println("결과: 예금이 성공되었습니다.");
 	}
 
