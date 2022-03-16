@@ -1,21 +1,25 @@
 package chap07.book.s070702;
 
 public class Car {
-
-	Tire frontLeftTire = new Tire();
-	Tire frontRightTire = new Tire();
-	Tire backLeftTire = new Tire();
-	Tire backRightTire = new Tire();
-
-	Car myCar = new Car();
-	myCar.frontRightTire = new HankookTire();
-	myCar.backLeftTire = new KumhoTire();
-	myCar.run();
+	//필드
+	Tire frontLeftTire = new Tire("앞왼쪽", 6);
+	Tire frontRightTire = new Tire("앞오른쪽", 2);
+	Tire backLeftTire = new Tire("뒤왼쪽", 3);
+	Tire backRightTire = new Tire("뒤오른쪽", 4);
 	
-	void run() {
-		frontLeftTire.roll();
-		frontRightTire.roll();
-		backLeftTire.roll();
-		backRightTire.roll();
+	//생성자
+	//메소드
+	int run() {
+		System.out.println("[자동차가 달립니다.]");
+		if(frontLeftTire.roll()==false) {stop(); return 1;}
+		if(frontRightTire.roll()==false) {stop(); return 2;}
+		if(backLeftTire.roll()==false) {stop(); return 3;}
+		if(backRightTire.roll()==false) {stop(); return 4;}
+		return 0;
+		
+	}
+	
+	void stop() {
+		System.out.println("[자동차가 멈춥니다.]");
 	}
 }
